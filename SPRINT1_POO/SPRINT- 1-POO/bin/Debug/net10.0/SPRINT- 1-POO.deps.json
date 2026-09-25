@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SPRINT- 1-POO/1.0.0": {
+        "runtime": {
+          "SPRINT- 1-POO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SPRINT- 1-POO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
