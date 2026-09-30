@@ -1,4 +1,4 @@
-**# SISTEMA BANCÁRIO- DESAFIO POO
+# SISTEMA BANCÁRIO- DESAFIO POO
 Sistema desenvolvido na linguagem c# que aplica os conceitos estudados em Programação Orientada a Objeto, sendo elas: Classes e objetos, construtores e propriedades, encapsulamento, herança, polimorfismo, interface e tratamento de exceções.
 -------------------------------------------------------------------------------------------------
 
@@ -15,7 +15,7 @@ Um banco precisa gerenciar diferentes tipos de contas. Todas as contas têm sald
 
 CLASSES DA SOLUÇÃO:
 
-ContaBancaria (classe pai, abstrata)
+*ContaBancaria (classe pai, abstrata):*
 
 Atributos: NumeroConta do tipo int; Titular do tipo string; Saldo do tipo decimal; Tipo do tipo string (abstrato, cada filha define o próprio valor).
 
@@ -23,7 +23,7 @@ Métodos: Depositar (decimal valor): adiciona valor ao saldo; Sacar (decimal val
 
 ----------------------------------------------------------------------------------------------------
 
-ContaCorrente (herda de ContaBancaria)
+*ContaCorrente (herda de ContaBancaria):*
 
 Atributos: TaxaSaque do tipo decimal, valor fixo cobrado a cada saque.
 
@@ -31,7 +31,7 @@ Métodos: Sacar (decimal valor): desconta o valor pedido mais a taxa. Lança Sal
 
 -------------------------------------------------------------------------------------------------------
 
-ContaPoupança (herda de ContaBancaria, implementa IRentavel):
+*ContaPoupança (herda de ContaBancaria, implementa IRentavel):*
 
 Atributos: TaxaRendimento do tipo decimal, percentual aplicado sobre o saldo.
 
@@ -39,7 +39,7 @@ Métodos: Sacar (decimal valor): desconta o valor direto do saldo, sem taxa. Lan
 
 -------------------------------------------------------------------------------------------------------
 
-ContaEmpresarial (herda de ContaBancaria):
+*ContaEmpresarial (herda de ContaBancaria):*
 
 Atributos: LimiteEmprestimo do tipo decimal, valor extra que a conta pode usar além do saldo; LimiteDisponivel do tipo decimal (calculado), soma do saldo com o limite de empréstimo.
 
@@ -47,7 +47,7 @@ Métodos: Sacar (decimal valor): permite saldo negativo até o limite de emprés
 
 -------------------------------------------------------------------------------------------------------
 
-IRentavel (interface): 
+*IRentavel (interface):*
 
 Contrato para contas que rendem. Só a ContaPoupanca implementa.
 
@@ -55,7 +55,7 @@ Membros: TaxaRendimento (propriedade que a classe implementadora deve expor); Ap
 
 -------------------------------------------------------------------------------------------------------
 
-Banco (classe de controle):
+*Banco (classe de controle):*
 
 Guarda a lista de contas e concentra as operações do sistema.
 
